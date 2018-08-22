@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en-US">
+{{ partial "langSwitch.html" . }}
+{{ partial "head.html" . }}
+...        
+  <article>
+    <h1>{{ .Title }}</h1>
+    <div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+    {{ .Content }}
+  </article>
+...
+</html>
