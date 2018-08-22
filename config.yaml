@@ -13,10 +13,30 @@ languages:
         name: Home
         url: /
         weight: 1
+      - identifier: what-we-do
+        name: What we do
+        url: /what-we-do/
+        weight: 2
+      - identifier: products
+        name: Products
+        url: /products/
+        weight: 3
+      - identifier: work-with-us
+        name: Work with us
+        url: /work-with-us/
+        weight: 4
       - identifier: blog
         name: Blog
         url: /blog/
-        weight: 2
+        weight: 5
+      - identifier: our-team
+        name: Our team
+        url: /our-team/
+        weight: 6
+      - identifier: contact-us
+        name: Contact us
+        url: /contact/
+        weight: 7
       
   fr:
     baseUrl: https://numerique.canada.ca
@@ -33,10 +53,30 @@ languages:
         name: Home
         url: /
         weight: 1
+      - identifier: ce-que-nous-faisons
+        name: Ce que nous faisons
+        url: /ce-que-nous-faisons/
+        weight: 2
+      - identifier: produits
+        name: Produits
+        url: /produits/
+        weight: 3
+      - identifier: travaillez-avec-nous
+        name: Travaillez avec nous
+        url: /travaillez-avec-nous/
+        weight: 4
       - identifier: blogue
         name: blogue
         url: /blogue/
-        weight: 2
+        weight: 5
+      - identifier: notre-equipe
+        name: Notre équipe
+        url: /notre-equipe/
+        weight: 6
+      - identifier: contactez-nous
+        name: Contactez-nous
+        url: /contactez-nous/
+        weight: 7
 params:
   navigation:
     help: "Help"

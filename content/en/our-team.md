@@ -1,0 +1,5 @@
+---
+type: section
+layout: our-team
+aliases: [/notre-equipe/]
+---

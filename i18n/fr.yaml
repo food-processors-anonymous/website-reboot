@@ -2,3 +2,13 @@ test:
   other: "francais test"
 blog:
   other: "Blogue"
+work-with-us:
+  other: "Travaillez avec nous"
+what-we-do:
+  other: "Ce que nous faisons"
+our-team:
+  other: "Notre équipe"
+products:
+  other: "Produits"
+contact-us:
+  other: "Contactez-nous"

@@ -2,3 +2,13 @@ test:
   other: "english test"
 blog:
   other: "Blog"
+work-with-us:
+  other: "Work with us"
+what-we-do:
+  other: "What we do"
+our-team:
+  other: "Our team"
+products:
+  other: "Products"
+contact-us:
+  other: "Contact us"
