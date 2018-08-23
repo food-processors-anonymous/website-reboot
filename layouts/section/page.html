@@ -2,8 +2,9 @@
 <html lang="en-US">
   {{ partial "langSwitch" . }}
   {{ partial "head.html" . }}
-...        
-  <h1 id="title">{{i18n "what-we-do"}}</h1>
 
-...
+  <h1 id="title">{{i18n $.Params.title }}</h1>
+
+  {{ .Content}}
+
 </html>

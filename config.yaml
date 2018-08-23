@@ -4,6 +4,7 @@ languages:
   en:
     baseUrl: https://digital.canada.ca
     contentDir: content/en
+    lang: en
     languageName: English
     title: Blog
     weight: 1
@@ -41,6 +42,7 @@ languages:
   fr:
     baseUrl: https://numerique.canada.ca
     contentDir: content/fr
+    lang: fr
     languageName: Francais
     params:
       navigation:

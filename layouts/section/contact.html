@@ -2,8 +2,16 @@
 <html lang="en-US">
   {{ partial "langSwitch" . }}
   {{ partial "head.html" . }}
-...        
-  <h1 id="title">{{i18n "contact-us"}}</h1>
 
-...
+  <section class="section page-contact page--outer-container-padding">
+      <h2 class="section--title">Connect with us!</h2>
+    
+      <div class="contact-info-container">
+        {{ partial "contact-info.html" . }}
+      </div>
+        
+    </section>
+    <section class="section section--mailing-list no-bg">
+      <a name="mailing-list"></a>
+    </section>
 </html>
