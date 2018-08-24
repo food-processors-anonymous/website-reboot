@@ -13,5 +13,7 @@
     </section>
     <section class="section section--mailing-list no-bg">
       <a name="mailing-list"></a>
+      {{ $path := printf "%s%s%s" "mailing-list." (string ($.Site.Language)) ".html" }}
+      {{ partial  $path }}
     </section>
 </html>
