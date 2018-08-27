@@ -4,7 +4,7 @@
   {{ partial "head.html" . }}
 ...        
   <h1 id="title">{{i18n "blog"}}</h1>
-    <div class="post-summary">
+    <div>
       {{ range .Pages }}
           {{ .Render "list"}}
       {{ end }}

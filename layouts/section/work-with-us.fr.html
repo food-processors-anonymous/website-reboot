@@ -2,17 +2,17 @@
 <html lang="en-US">
   {{ partial "langSwitch" . }}
   {{ partial "head.html" . }}
-    <div class="container">
-        <section class="section work-with-us--intro page-intro--outer-container-padding">
-            <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-                    <h2 class="section--title">Travaillez au SNC</h2>
+    <div>
+        <section>
+            <div>
+                <div>
+                    <h2>Travaillez au SNC</h2>
                     {{ if gt (len (where .Pages ".Params.archived" "==" false)) 0 }}
-                        <div class="cell-background">
+                        <div>
                             <h4>Candidatures possibles pour un temps limité</h4>
                             {{ if gt (len (where (where .Pages ".Params.archived" "==" false) ".Params.postingtype" "==" "senior-job-post")) 0 }}
                                 <p style="margin-bottom: 0.5rem;">Nous souhaitons combler ces postes supérieurs le plus tôt possible&nbsp;:</p>
-                                <div class="row mrgn-tp-0">
+                                <div>
                                     <ul>
                                         {{ range $p := (where (where .Pages ".Params.archived" "==" false) ".Params.postingtype" "==" "senior-job-post") }}
                                             <li><a href={{ .RelPermalink }}>{{ .Title }}</a></li>
@@ -22,7 +22,7 @@
                             {{ end }}
                             {{ if gt (len (where (where .Pages ".Params.archived" "==" false) ".Params.postingtype" "==" "job-post")) 0 }}
                                 <p style="margin-bottom: 0.5rem;">Nous souhaitons combler ces postes le plus tôt possible&nbsp;:</p>
-                                <div class="row mrgn-tp-0">
+                                <div>
                                     <ul>
                                         {{ range $p := (where (where .Pages ".Params.archived" "==" false) ".Params.postingtype" "==" "job-post") }}
                                             <li><a href={{ .RelPermalink }}> {{ .Title }}</a></li>
@@ -41,16 +41,16 @@
         </section>
     </div>
 
-    <div class="container">
-        <section class="section work-with-us--details container-fluid page-wide--outer-container-padding">
-            <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-                    <h2 class="section--title">Détails des postes</h2>
+    <div>
+        <section>
+            <div>
+                <div>
+                    <h2>Détails des postes</h2>
 
                     <p>Nous créons des équipes de projet multidisciplinaires qui travailleront en partenariat avec les ministères à développer des prototypes ainsi qu’à créer et à déployer des solutions numériques. <a href="/ce-que-nous-faisons/">Pour en savoir davantage sur notre façon de travailler</a></p>
 
                     <p>Nous embauchons dans deux volets&nbsp;:</p>
-                    <div class="row mrgn-tp-0">
+                    <div>
                         <ul>
                             <li><a href="#development">Développement</a></li>
                             <li><a href="#prod">Gestion de produit</a></li>
@@ -68,12 +68,12 @@
         </section>
     </div>
 
-    <section class="section work-with-us--looking-for">
-        <div class="container">
-            <div class="page-wide--outer-container-padding">
-                <div class="row wb-eqht">
-                    <div class="col-sm-10 col-sm-offset-1 mrgn-bttm-md"><h3>Ce que nous offrons</h3></div>
-                    <div class="col-sm-10 col-sm-offset-1 mrgn-bttm-md">
+    <section>
+        <div>
+            <div>
+                <div>
+                    <div><h3>Ce que nous offrons</h3></div>
+                    <div>
                         <ul>
                             <li><span>Une équipe agile et dynamique dans laquelle vous travaillerez en compagnie d’experts dans plusieurs disciplines numériques.</span></li>
                             <li><span>Un environnement stimulant, qui vous donne accès aux outils modernes nécessaires à votre excellent travail.</span></li>
@@ -82,12 +82,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row wb-eqht border-top">
-                    <div class="col-sm-10 col-sm-offset-1">
+                <div>
+                    <div>
                         <h3>Profil des candidats recherchés</h3>
-                        <h4 class="section-smallcaps-title mrgn-tp-md">Vous&nbsp;:</h4>
+                        <h4>Vous&nbsp;:</h4>
                     </div>
-                    <div class="col-sm-10 col-sm-offset-1 mrgn-bttm-lg">
+                    <div>
                         <ul>
                             <li><span>êtes passionné par l’expérience utilisateur et vous souhaitez apporter des améliorations mesurables à la prestation de services.</span></li>
                             <li><span>aimez autant travailler en équipe multidisciplinaire qu’avec des partenaires de l’extérieur.</span></li>
@@ -97,9 +97,9 @@
                             <li><span>êtes séduit par le problème, et non par la solution.</span></li>
                         </ul>
                     </div>
-                    <div class="col-sm-10 col-sm-offset-1 dark-background">
-                        <h4 class="section-smallcaps-title mrgn-tp-lg">Les critères obligatoires</h4>
-                        <ul class="mrgn-tp-md">
+                    <div>
+                        <h4>Les critères obligatoires</h4>
+                        <ul>
                             <li><span>Les candidats doivent maîtriser l’anglais ou le français. Pour le volet Communications et Mobilisation, la préférence ira aux candidats qui maîtrisent les deux langues officielles.</span></li>
                             <li><span>La préférence ira aux citoyens canadiens ou résidents permanents.</span></li>
                             <li><span>Tous les candidats doivent obtenir une cote de sécurité du gouvernement du Canada de niveau «&nbsp;fiabilité&nbsp;» ou «&nbsp;secret&nbsp;». Nous vous aiderons à cet égard si vous vous voyez offrir un poste.</span></li>
@@ -110,21 +110,21 @@
         </div>
     </section>
 
-    <section class="section work-with-us--streams">
-        <div class="container">
-            <div class="row page-wide--outer-container-padding">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <h2 class="section--title">Volets</h2>
+    <section>
+        <div>
+            <div>
+                <div>
+                    <h2>Volets</h2>
                         <h3><a id="development"></a>Développement</h3>
                         <p><strong>Avant-plan, arrière-plan, développement et exploitation</strong></p>
-                        <div class="row wb-eqht">
-                            <div class="col-xs-12 col-md-6">
+                        <div>
+                            <div>
                                 <ul>
                                     <li>Votre passion et vos compétences à produire du code de grande qualité, dans des langages tels que Javascript, PHP, Ruby, Python et SASS, n’ont d’égal que votre expérience de la technologie telle que NodeJS, Rails, React, Angular et Serverless.</li>
                                     <li>Vous connaissez bien le développement d’API de style REST ou à l’aide de GraphQL.</li>
                                 </ul>
                             </div>
-                            <div class="col-xs-12 col-md-6">
+                            <div>
                                 <ul>
                                     <li>Vous avez l’habitude de travailler en équipe agile, en cycles courts et itératifs. Le développement basé sur les essais vous enthousiasme.</li>
                                     <li>Vous êtes en mesure de contribuer à des projets reposant sur du code libre et de partager votre travail sur Github ou d’autres dépôts de codes publics.</li>
@@ -133,20 +133,18 @@
                         </div>
                     </div>
                 </div>
-
         <hr>
-
-            <div class="row page-wide--outer-container-padding">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <h3 class="mrgn-bttm-lg"><a id="prod"></a>Gestion de produit</h3>
-                    <div class="row wb-eqht">
-                        <div class="col-xs-12 col-md-6">
+            <div>
+                <div>
+                    <h3><a id="prod"></a>Gestion de produit</h3>
+                    <div>
+                        <div>
                             <ul>
                                 <li>Vous possédez une solide expérience de leadership et avez élaboré et livré, avec succès, des produits ou services numériques de grande qualité, ce qui suppose que vous avez déjà fait évoluer la vision d’un produit en gérant sa réalisation d’un bout à l’autre.</li>
                                 <li>Vous avez de l’expérience dans la définition et l’élaboration de principes, les pratiques et processus liés au produit; ceux-ci permettent à vos équipes de bâtir, de manière collaborative, la bonne solution, de la bonne façon.</li>
                             </ul>
                         </div>
-                        <div class="col-xs-12 col-md-6">
+                        <div>
                             <ul>
                                 <li>Vous avez déjà dirigé une ou plusieurs équipes multidisciplinaires menant de front plusieurs produits dans un environnement agile et avez aplani les obstacles au cours de l’élaboration d’un produit, du début à la fin.</li>
                                 <li>Vous avez de l’expérience à trouver un juste équilibre entre les besoins des utilisateurs et les objectifs opérationnels afin de circonscrire un problème et déterminer les priorités d’une équipe de livraison.</li>
@@ -158,16 +156,16 @@
             </div>
     </section>
 
-    <div class="container">
-        <section class="section work-with-us--process page-wide--outer-container-padding">
-            <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-                    <h2 class="section--title">Le processus</h2>
+    <div>
+        <section>
+            <div>
+                <div>
+                    <h2>Le processus</h2>
 
                     <p>Nous avons comme objectif de trouver le jumelage parfait entre le candidat et l’organisation. Voici ce à quoi vous pouvez vous attendre lorsque vous postuler&nbsp;:</p>
 
-                    <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1">
+                    <div>
+                        <div>
                             <h3 class="mrgn-tp-md">1. Confirmation</h3>
                             <p>Une fois que vous avez postulé, vous recevrez un courriel accusant réception de votre candidature.</p>
                             <h3>2. Appel préliminaire</h3>
@@ -183,54 +181,54 @@
                         </div>
                     </div>
 
-                    <p class="mrgn-tp-md">Si vous ne recevez pas une offre d’emploi de notre part, il nous fera plaisir de discuter avec vous de votre candidature et des raisons qui ont fait que nous ne vous avons pas choisi. Il se pourrait que nous gardions votre candidature en réserve pour des besoins futurs.</p>
+                    <p>Si vous ne recevez pas une offre d’emploi de notre part, il nous fera plaisir de discuter avec vous de votre candidature et des raisons qui ont fait que nous ne vous avons pas choisi. Il se pourrait que nous gardions votre candidature en réserve pour des besoins futurs.</p>
                     <p>Nous nous ajustons au fur et à mesure dans tout ce que nous faisons. Que vous postuliez ou non, il nous fera plaisir de recevoir vos commentaires sur les façons d’améliorer le processus; <a href="mailto:cds-snc@tbs-sct.gc.ca">envoyez-nous un courriel</a>.</p>
                     </div>
                 </div>
         </section>
     </div>
 
-    <section class="section work-with-us--apply-now ">
-        <div class="container page-wide--outer-container-padding">
-            <h2 class="section--title">Postulez maintenant</h2>
+    <section>
+        <div>
+            <h2>Postulez maintenant</h2>
 
-            <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-                <form class="text-left" role="form" id="contactForm">
-                    <div class="form-group">
+            <div>
+                <form role="form" id="contactForm">
+                    <div>
                         <label for="name">Nom complet</label>
-                        <input type="text" class="form-control validate-required" id="name" aria-required="true" aria-describedby="name-required">
-                        <span id="name-required" class="error-message validate-required-message" style="display: none;">Ce champ est obligatoire</span>
+                        <input type="text" id="name" aria-required="true" aria-describedby="name-required">
+                        <span id="name-required" style="display: none;">Ce champ est obligatoire</span>
                     </div>
-                    <div class="form-group">
+                    <div>
                         <label for="email">Courriel</label>
-                        <input type="email" class="form-control validate-required validate-email" id="email" aria-required="true" aria-describedby="email-required">
-                        <span id="email-required" class="error-message validate-required-message" style="display: none;">Ce champ est obligatoire</span>
+                        <input type="email" id="email" aria-required="true" aria-describedby="email-required">
+                        <span id="email-required" style="display: none;">Ce champ est obligatoire</span>
                     </div>
 
-                    <div role="radiogroup" aria-labelledby="stream-label stream-required" class="form-group">
+                    <div role="radiogroup" aria-labelledby="stream-label stream-required">
                         <label id="stream-label">Volet</label>
-                        <div class="radio">
-                                <label><input type="radio" name="streams" value="Developer">Développement</label><br>
-                                <label><input type="radio" name="streams" value="Product Management">Gestion de produit</label>
+                        <div>
+                            <label><input type="radio" name="streams" value="Developer">Développement</label><br>
+                            <label><input type="radio" name="streams" value="Product Management">Gestion de produit</label>
                         </div>
-                        <span id="stream-required" class="error-message validate-required-message" style="display: none;">Ce champ est obligatoire</span>
+                        <span id="stream-required" style="display: none;">Ce champ est obligatoire</span>
                     </div>
 
-                    <div class="form-group">
+                    <div>
                         <label for="body">Dites-nous, en 300 mots ou moins, pourquoi vous voulez travailler avec nous et ce que l'on devrait savoir au sujet de vos échantillons de travail.</label>
-                        <textarea class="form-control validate-required validate-maxwords" id="body" rows="5" aria-required="true" aria-describedby="body-required word-count-message"></textarea>
-                        <span id="body-required" class="error-message validate-required-message" style="display: none;">Ce champ est obligatoire<br></span>
-                        <span id="word-count-message" class="help-text"><span id="word-count">300</span> mots restants</span>
+                        <textarea id="body" rows="5" aria-required="true" aria-describedby="body-required word-count-message"></textarea>
+                        <span id="body-required" style="display: none;">Ce champ est obligatoire<br></span>
+                        <span id="word-count-message"><span id="word-count">300</span> mots restants</span>
                     </div>
-                    <div class="form-group">
+                    <div>
                         <label for="work_link">Échantillons de votre travail (liens URL SVP!)</label>
-                        <input type="text" class="form-control" id="work_link">
+                        <input type="text" id="work_link">
                     </div>
-                    <div class="form-group">
-                        <label class="wb-inv" for="work_link_2">Échantillons de votre travail</label>
-                        <input type="text" class="form-control" id="work_link_2">
+                    <div>
+                        <label for="work_link_2">Échantillons de votre travail</label>
+                        <input type="text" id="work_link_2">
                     </div>
-                    <button type ="submit" class="button" id="submitButton"><span class="spinner" id="buttonSpinner"><i class="fa fa-refresh fa-spin"></i></span>Soumettre</button>
+                    <button type ="submit" id="submitButton"><span id="buttonSpinner"></span>Soumettre</button>
                     <a href="/transparence/enonce-de-confidentialite/">Énoncé de confidentialité</a>
                 </form>
             </div>

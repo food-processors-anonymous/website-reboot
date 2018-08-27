@@ -3,15 +3,15 @@
   {{ partial "langSwitch" . }}
   {{ partial "head.html" . }}
 
-  <section class="section page-contact page--outer-container-padding">
-      <h2 class="section--title">Connect with us!</h2>
+  <section>
+      <h2>Connect with us!</h2>
     
-      <div class="contact-info-container">
+      <div>
         {{ partial "contact-info.html" . }}
       </div>
         
     </section>
-    <section class="section section--mailing-list no-bg">
+    <section>
       <a name="mailing-list"></a>
       {{ $path := printf "%s%s%s" "mailing-list." (string ($.Site.Language)) ".html" }}
       {{ partial  $path }}
