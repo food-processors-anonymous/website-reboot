@@ -4,7 +4,9 @@
 {{ partial "head.html" . }}
 ...        
   <article>
+    <div role="img" class="post-list-photo" aria-label="{{ .Params.imagealt }}" style="height: 20rem; background-size: cover; background-image: url('/img/cds/post-images/{{ .Params.image }}')"></div>
     <h1>{{ .Title }}</h1>
+    <h3>{{ .Params.author }}</h3>
     <div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
     {{ .Content }}
   </article>
