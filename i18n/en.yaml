@@ -2,6 +2,10 @@ test:
   other: "english test"
 blog:
   other: "Blog"
+canadian-digital-service:
+  other: "Canadian Digital Service"
+homepage-tag-line:
+  other: "People expect government services to be simple and easy to use."
 work-with-us:
   other: "Work with us"
 what-we-do:
@@ -14,3 +18,7 @@ contact-us:
   other: "Contact us"
 twitter:
   other: CDS_GC
+pause:
+  other: "Pause"
+play:
+  other: "Play"

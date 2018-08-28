@@ -2,6 +2,10 @@ test:
   other: "francais test"
 blog:
   other: "Blogue"
+canadian-digital-service: 
+  other: "Service numérique canadien"
+homepage-tag-line:
+  other: "Les gens s’attendent à ce que les services gouvernementaux soient simples et faciles à utiliser."
 work-with-us:
   other: "Travaillez avec nous"
 what-we-do:
@@ -14,3 +18,7 @@ contact-us:
   other: "Contactez-nous"
 twitter:
   other: SNC_GC
+pause:
+  other: "Pause"
+play:
+  other: "Lecture"
