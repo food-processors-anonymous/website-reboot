@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+        {{ partial "css.html" }}
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </head>
     {{ partial "langSwitch.html" . }}
     {{ partial "head.html" . }}
     <body>
         <header role="banner">
-            <div class="page-banner">
-                <div class="page-banner--video">
+            <div>
+                <div>
                     <video playsinline muted loop poster="/img/cds/header-images/front-poster-image.jpg" id="js-video-bg" aria-hidden="true">
                         <source src="/img/cds/header-images/homepage_header.mp4" type="video/mp4">
                     </video>
-                    <div class="page-banner--scrim"></div>
+                    <div></div>
         
-                    <div class="page-banner--video-controls hidden" aria-hidden="true">
+                    <div aria-hidden="true">
                         <div id="js-play-pause">
-                            <a href="#" id="js-paused" class="video-banner--control-button">
-                                <span class="fa fa-play pause-ico"></span>
-                                <span class="button-text">{{i18n "play"}}<span class="sr-only"> video</span></span>
+                            <a href="#" id="js-paused">
+                                <span></span>
+                                <span>{{i18n "play"}}<span> video</span></span>
                             </a>
-                            <a href="#" id="js-playing" class="video-banner--control-button" style="display: none;">
-                                <span class="fa fa-pause pause-ico"></span>
-                                <span class="button-text">{{i18n "pause"}}<span class="sr-only"> video</span></span>
+                            <a href="#" id="js-playing" style="display: none;">
+                                <span></span>
+                                <span>{{i18n "pause"}}<span class="sr-only"> video</span></span>
                             </a>
                         </div>
                     </div>
                 </div>
         
                 <div>
-                    <div class="container">
-                        <div class="row">
+                    <div>
+                        <div>
                             <div>
-                                <object type="image/svg+xml" tabindex="-1" data="/img/cds/cds-logo-{{ (string ($.Site.Language)) }}.svg" class="page-banner--tag-line--logo"></object>
-                                <h1 class="wb-inv">{{ i18n "canadian-digital-service" }}</h1>
+                                <object type="image/svg+xml" tabindex="-1" data="/img/cds/cds-logo-{{ (string ($.Site.Language)) }}.svg"></object>
+                                <h1>{{ i18n "canadian-digital-service" }}</h1>
                             </div>
                             <div>{{ i18n "homepage-tag-line" }}</div>
                         </div>
@@ -48,21 +49,21 @@
             </section>
         </main>
 
-        <section class="section section--contact page-wide--outer-container-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 hidden-xs">
-                            <div class="hiGraphic"></div>
+        <section>
+                <div>
+                    <div>
+                        <div>
+                            <div></div>
                         </div>
-                        <div class="col-xs-12 col-sm-6">
+                        <div>
                             <h2>Connect with us!</h2>
                             TODO include contact info
                         </div>
-                        </div>
+                    </div>
                 </div>
             </section>	   
             
-            <section class="section section--mailing-list">
+            <section>
                 TODO include mailing list
             </section>
         {{ partial "footer.html" . }}
