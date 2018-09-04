@@ -1,8 +1,2 @@
 body {
-  color: green; }
-
-div {
-  background-color: blue; }
-
-#vac-benefits {
-  background-color: red; }
+  color: #333; }

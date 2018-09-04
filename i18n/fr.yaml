@@ -1,24 +1,24 @@
-test:
-  other: "francais test"
 blog:
   other: "Blogue"
 canadian-digital-service: 
   other: "Service numérique canadien"
-homepage-tag-line:
-  other: "Les gens s’attendent à ce que les services gouvernementaux soient simples et faciles à utiliser."
-work-with-us:
-  other: "Travaillez avec nous"
-what-we-do:
-  other: "Ce que nous faisons"
-our-team:
-  other: "Notre équipe"
-products:
-  other: "Produits"
 contact-us:
   other: "Contactez-nous"
-twitter:
-  other: SNC_GC
+homepage-tag-line:
+  other: "Les gens s’attendent à ce que les services gouvernementaux soient simples et faciles à utiliser."
+our-team:
+  other: "Notre équipe"
 pause:
   other: "Pause"
 play:
   other: "Lecture"
+products:
+  other: "Produits"
+test:
+  other: "francais test"
+twitter:
+  other: SNC_GC
+work-with-us:
+  other: "Travaillez avec nous"
+what-we-do:
+  other: "Ce que nous faisons"
