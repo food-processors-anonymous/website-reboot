@@ -1,7 +1,7 @@
 backend:
   name: github
-  branch: master # Branch to update (optional; defaults to master)
-  repo: cds-snc/website-reboot
+  branch: testing # Branch to update (optional; defaults to master)
+  repo: food-processors-anonymous/website-reboot
 publish_mode: editorial_workflow
 media_folder: "static/images/uploads"
 collections:
