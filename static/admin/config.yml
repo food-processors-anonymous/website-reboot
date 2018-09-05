@@ -3,7 +3,7 @@ backend:
   branch: testing # Branch to update (optional; defaults to master)
   repo: food-processors-anonymous/website-reboot
 publish_mode: editorial_workflow
-media_folder: "static/images/uploads"
+media_folder: "static/img"
 collections:
   - name: "blog"
     label: "Blog"
