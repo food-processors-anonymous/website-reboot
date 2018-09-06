@@ -3,8 +3,8 @@ backend:
   branch: testing # Branch to update (optional; defaults to master)
   repo: food-processors-anonymous/website-reboot
 publish_mode: editorial_workflow
-media_folder: "static/img/cds/post-images"
-public_folder: "/img/cds/post-images"
+media_folder: "static/img/cds"
+public_folder: "/img/cds"
 collections:
   - name: "blog"
     label: "Blog"
@@ -34,6 +34,73 @@ collections:
       - {label: "Image Alt-text", name: "image-alt"}
       - {label: "TranslationKey", name: "translationKey", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "datafiles"
+    label: "Data Files"
+    files:
+      - label: "i18n English"
+        name: "i18nEn"
+        file: "i18n/en.yaml"
+        fields:
+          - label: test
+            name: test
+            widget: object
+            fields:
+            - {label: other, name: other, widget: string}
+          - label: blog
+            name: blog
+            widget: object
+            fields:
+            - {label: other, name: other, widget: string}
+      - label: "i18n Francais"
+        name: "i18nFr"
+        file: "i18n/fr.yaml"
+        fields:
+          - label: test
+            name: test
+            widget: object
+            fields:
+              - {label: other, name: other, widget: string}
+          - label: blog
+            name: blog
+            widget: object
+            fields:
+              - {label: other, name: other, widget: string}
+      - label: "Team"
+        name: "team"
+        file: "data/team.yml"
+        fields:
+          - label: exec
+            name: exec
+            widget: list
+            fields:
+              - {label: name, name: name, widget: string}
+              - label: title
+                name: title
+                widget: object
+                fields:
+                  - {label: en, name: en, widget: string}
+                  - {label: fr, name: fr, widget: string}
+              - {label: image-name, name: image-name, widget: image}
+              - {label: twitter, name: twitter, widget: string}
+              - {label: linkedin, name: linkedin, widget: string}
+              - {label: email, name: email, widget: string}
+              - {label: github, name: github, widget: string}
+          - label: team
+            name: team
+            widget: list
+            fields:
+              - {label: name, name: name, widget: string}
+              - label: title
+                name: title
+                widget: object
+                fields:
+                  - {label: en, name: en, widget: string}
+                  - {label: fr, name: fr, widget: string}
+              - {label: image-name, name: image-name, widget: image}
+              - {label: twitter, name: twitter, widget: string}
+              - {label: linkedin, name: linkedin, widget: string}
+              - {label: email, name: email, widget: string}
+              - {label: github, name: github, widget: string}
 
 exclude:
  - admin/index.js
