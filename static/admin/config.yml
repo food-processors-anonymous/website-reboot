@@ -107,18 +107,21 @@ collections:
         fields:
           - {label: email, name: email, widget: string}
           - {label: youtube, name: youtube, widget: string}
-          - {label: github, name: cds-snc, widget: string}
-          - {label: linkedin, name: cds-snc, widget: string}
+          - {label: github, name: github, widget: string}
+          - {label: linkedin, name: github, widget: string}
           - label: medium
             name: medium
+            widget: object
             fields:
               - label: en
                 name: en
+                widget: object
                 fields:
                   - {label: name, name: name, widget: string}
                   - {label: url, name: url, widget: string}
               - label: fr
                 name: fr
+                widget: object
                 fields:
                   - {label: name, name: name, widget: string}
                   - {label: url, name: url, widget: string}
