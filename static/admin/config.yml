@@ -101,6 +101,27 @@ collections:
               - {label: linkedin, name: linkedin, widget: string}
               - {label: email, name: email, widget: string}
               - {label: github, name: github, widget: string}
+      - label: "CDS Contact Info"
+        name: "contact"
+        file: "data/contact.yml"
+        fields:
+          - {label: email, name: email, widget: string}
+          - {label: youtube, name: youtube, widget: string}
+          - {label: github, name: cds-snc, widget: string}
+          - {label: linkedin, name: cds-snc, widget: string}
+          - label: medium
+            name: medium
+            fields:
+              - label: en
+                name: en
+                fields:
+                  - {label: name, name: name, widget: string}
+                  - {label: url, name: url, widget: string}
+              - label: fr
+                name: fr
+                fields:
+                  - {label: name, name: name, widget: string}
+                  - {label: url, name: url, widget: string}
 
 exclude:
  - admin/index.js
