@@ -37,6 +37,46 @@ collections:
   - name: "datafiles"
     label: "Data Files"
     files:
+      - label: "Menu"
+        name: menu
+        file: "config.yaml"
+        fields:
+          - label: languages
+            name: languages
+            widget: object
+            fields:
+              - label: en
+                name: en
+                widget: object
+                fields:
+                  - label: menu
+                    name: menu
+                    widget: object
+                    fields:
+                      - label: main
+                        name: main
+                        widget: list
+                        fields:
+                          - {label: identifier, name: identifier, widget: string}
+                          - {label: name, name: name, widget: string}
+                          - {label: url, name: url, widget: string}
+                          - {label: weight, name: weight, widget: number}
+              - label: fr
+                name: fr
+                widget: object
+                fields:
+                  - label: menu
+                    name: menu
+                    widget: object
+                    fields:
+                      - label: main
+                        name: main
+                        widget: list
+                        fields:
+                          - {label: identifier, name: identifier, widget: string}
+                          - {label: name, name: name, widget: string}
+                          - {label: url, name: url, widget: string}
+                          - {label: weight, name: weight, widget: number}
       - label: "i18n English"
         name: "i18nEn"
         file: "i18n/en.yaml"
@@ -45,12 +85,12 @@ collections:
             name: test
             widget: object
             fields:
-            - {label: other, name: other, widget: string}
+              - {label: other, name: other, widget: string}
           - label: blog
             name: blog
             widget: object
             fields:
-            - {label: other, name: other, widget: string}
+              - {label: other, name: other, widget: string}
       - label: "i18n Francais"
         name: "i18nFr"
         file: "i18n/fr.yaml"
