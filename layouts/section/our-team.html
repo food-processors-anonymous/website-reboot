@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  {{ partial "css.html" }}
   {{ partial "langSwitch" . }}
   {{ partial "head.html" . }}
 ...        
@@ -15,7 +16,7 @@
           <div>
   
             <div>
-              <div style="background-image: url('/img/cds/profile-images/{{ $member.imageName }}');"></div>
+              <div class="profilePicture" style="background-image: url('/img/cds/{{ index $member "image-name" }}');"></div>
             </div>
   
             <div>
@@ -67,7 +68,7 @@
           <div>
             <div>
               <div>
-                <div style="background-image: url('/img/cds/profile-images/{{ $member.imageName }}');"></div>
+                <div class="profilePicture" style="background-image: url('/img/cds/{{ index $member "image-name" }}');"></div>
               </div>
   
               <div>

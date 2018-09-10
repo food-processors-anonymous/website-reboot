@@ -1,7 +1,7 @@
 <ul class="contact-info">
     <li>
-        <div><a href="mailto:{{ .Site.Data.sitewide.email }}"></a></div>
-        <div><a href="mailto:{{ .Site.Data.sitewide.email }}"><span>Email: </span>{{ .Site.Data.sitewide.email }}</a></div>
+        <div><a href="mailto:{{ .Site.Data.contact.email }}"></a></div>
+        <div><a href="mailto:{{ .Site.Data.contact.email }}"><span>Email: </span>{{ .Site.Data.contact.email }}</a></div>
     </li>
 
     <li>
@@ -10,13 +10,13 @@
         <a href="https://twitter.com/{{ i18n "twitter" }}"><span>Twitter: </span>{{ i18n "twitter" }}</a></div>
     </li>
     <li>
-        <div><a href="https://linkedin.com/company/{{$.Site.Data.sitewide.linkedin}}"></a></div>
-        <div><a href="https://linkedin.com/company/{{.Site.Data.sitewide.linkedin}}"><span>LinkedIn: </span>{{ $.Site.Data.sitewide.linkedin }}</a></div>
+        <div><a href="https://linkedin.com/company/{{$.Site.Data.contact.linkedin}}"></a></div>
+        <div><a href="https://linkedin.com/company/{{.Site.Data.contact.linkedin}}"><span>LinkedIn: </span>{{ $.Site.Data.contact.linkedin }}</a></div>
     </li>
 
     <li>
-        <div><a href="https://github.com/{{.Site.Data.sitewide.github}}"></a></div>
-        <div><a href="https://github.com/{{.Site.Data.sitewide.github}}"><span>Github: </span>{{ .Site.Data.sitewide.github }}</a></div>
+        <div><a href="https://github.com/{{.Site.Data.contact.github}}"></a></div>
+        <div><a href="https://github.com/{{.Site.Data.contact.github}}"><span>Github: </span>{{ .Site.Data.contact.github }}</a></div>
     </li>
 
         <li>
@@ -25,7 +25,7 @@
     </li>
 
     <li>
-        <div><a href={{ index $.Site.Data.sitewide.medium (string ($.Site.Language)) "url" }}></a></div>
-        <div><a href={{ index $.Site.Data.sitewide.medium (string ($.Site.Language)) "url" }}><span>Medium: </span>{{ index $.Site.Data.sitewide.medium (string ($.Site.Language)) "name" }}</a></div>
+        <div><a href={{ index $.Site.Data.contact.medium (string ($.Site.Language)) "url" }}></a></div>
+        <div><a href={{ index $.Site.Data.contact.medium (string ($.Site.Language)) "url" }}><span>Medium: </span>{{ index $.Site.Data.contact.medium (string ($.Site.Language)) "name" }}</a></div>
     </li>
 </ul>
