@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  {{ partial "langSwitch" . }}
+  {{ partial "head.html" . }}
+...        
+  <h1 id="title">{{i18n "blog"}}</h1>
+    <div>
+      {{ range .Pages }}
+          {{ .Render "list"}}
+      {{ end }}
+    </div>
+
+    {{ .Content }}
+...
+</html>

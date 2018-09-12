@@ -34,6 +34,27 @@ collections:
       - {label: "Image Alt-text", name: "image-alt"}
       - {label: "TranslationKey", name: "translationKey", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "products"
+    label: "Products"
+    folder: "content/en/products/products"
+    create: true
+    fields:
+     - {label: "Product Name", name: "title", widget: "string"}
+  - name: "featuredcards"
+    label: "Featured Cards"
+    files:
+      - label: "Products Page"
+        name: products
+        file: "data/featured/products.yml"
+        fields:
+          - label: cards
+            name: cards
+            widget: list
+            fields:
+              - {label: title, name: title, widget: string}
+              - {label: text, name: text, widget: text}
+              - {label: link, name: link, widget: string}
+              - {label: image, name: image, widget: image}
   - name: "datafiles"
     label: "Data Files"
     files:
