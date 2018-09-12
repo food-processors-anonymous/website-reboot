@@ -1,15 +1,22 @@
 <!DOCTYPE html>
+<head>
+  {{ partial "css.html" }}
+</head>
 <html lang="en-US">
   {{ partial "langSwitch" . }}
-  {{ partial "head.html" . }}
-...        
-  <h1 id="title">{{i18n "blog"}}</h1>
-    <div>
-      {{ range .Pages }}
-          {{ .Render "list"}}
-      {{ end }}
-    </div>
+  {{ partial "head.html" . }}       
+  <h1 id="title">{{i18n "products"}}</h1>
+  <div>
+    {{ range .Pages }}
+        {{ .Render "list"}}
+    {{ end }}
+  </div>
 
-    {{ .Content }}
-...
+  <div id="featuredCards">
+    {{ range $product := $.Site.Data.featured.products.cards }}
+      {{ partial "featured-card.html" $product}}
+    {{ end }}
+  </div>
+
+  {{ .Content }}
 </html>

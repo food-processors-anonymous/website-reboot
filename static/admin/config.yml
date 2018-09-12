@@ -39,7 +39,12 @@ collections:
     folder: "content/en/products/products"
     create: true
     fields:
-     - {label: "Product Name", name: "title", widget: "string"}
+      - {label: "Product Name", name: "title", widget: "string"}
+      - label: "Phase"
+        name: phase
+        widget: "select"
+        options: ["discovery", "alpha", "beta", "live"]
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "featuredcards"
     label: "Featured Cards"
     files:
