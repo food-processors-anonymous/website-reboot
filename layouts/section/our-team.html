@@ -10,9 +10,9 @@
     <h2>Key Contacts</h2>
   
     <div>
-      <div>
+      <div class="cardContainer">
         {{ range $member := $.Site.Data.team.exec }}
-        <div>
+        <div class="cardItem">
           <div>
   
             <div>
@@ -63,9 +63,9 @@
     <h2>Meet the full team</h2>
   
     <div>
-      <div>
+      <div class="cardContainer">
         {{ range $member := .Site.Data.team.team }}
-          <div>
+          <div class="cardItem">
             <div>
               <div>
                 <div class="profilePicture" style="background-image: url('/img/cds/{{ index $member "image-name" }}');"></div>

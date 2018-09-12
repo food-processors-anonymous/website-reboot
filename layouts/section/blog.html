@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
+    <head>
+        {{ partial "css.html" }}
+    </head>
   {{ partial "langSwitch" . }}
   {{ partial "head.html" . }}
 ...        
   <h1 id="title">{{i18n "blog"}}</h1>
-    <div>
+    <div class="cardContainer">
       {{ range .Pages }}
           {{ .Render "list"}}
       {{ end }}

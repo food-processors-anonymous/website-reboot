@@ -6,13 +6,13 @@
   {{ partial "langSwitch" . }}
   {{ partial "head.html" . }}       
   <h1 id="title">{{i18n "products"}}</h1>
-  <div>
+  <div class="cardContainer">
     {{ range .Pages }}
         {{ .Render "list"}}
     {{ end }}
   </div>
 
-  <div id="featuredCards">
+  <div class="cardContainer">
     {{ range $product := $.Site.Data.featured.products.cards }}
       {{ partial "featured-card.html" $product}}
     {{ end }}

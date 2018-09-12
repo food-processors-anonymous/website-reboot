@@ -8,12 +8,20 @@ body {
     background-size: contain;
 }
 
-.productCard {
-    display:inline-block;
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#featuredCards {
+.cardItem {
+    display: inline-block;
+    flex: 0 0 33.3333%;
+    flex-grow: 1;
+    min-width: 200px;
+}
 
+.productCard {
+    display:inline-block;
 }
 
 .featuredCard {

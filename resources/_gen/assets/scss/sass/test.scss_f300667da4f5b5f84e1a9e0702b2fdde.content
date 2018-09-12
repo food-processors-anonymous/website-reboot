@@ -6,6 +6,16 @@ body {
   height: 100px;
   background-size: contain; }
 
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap; }
+
+.cardItem {
+  display: inline-block;
+  flex: 0 0 33.3333%;
+  flex-grow: 1;
+  min-width: 200px; }
+
 .productCard {
   display: inline-block; }
 

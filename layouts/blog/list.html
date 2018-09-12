@@ -1,6 +1,8 @@
-<h2>{{ .Title }}</h2>
-<div role="img" aria-label="{{ .Params.imagealt }}" style="height: 20rem; background-size: cover; background-image: url('/img/cds/{{ .Params.image }}')"></div>
-<div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-<h3>{{ .Params.author }}</h3>
-<p>{{ .Summary }}</p>
-<a href="{{ .RelPermalink }}" class="post-summary-read-more">READ MORE</a>
+<div class="cardItem">
+    <h2>{{ .Title }}</h2>
+    <div role="img" aria-label="{{ .Params.imagealt }}" style="height: 20rem; background-size: cover; background-image: url('/img/cds/{{ .Params.image }}')"></div>
+    <div class="article-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+    <h3>{{ .Params.author }}</h3>
+    <p>{{ .Summary }}</p>
+    <a href="{{ .RelPermalink }}" class="post-summary-read-more">READ MORE</a>
+</div>
