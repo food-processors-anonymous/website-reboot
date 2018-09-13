@@ -7,7 +7,7 @@ media_folder: "static/img/cds"
 public_folder: "/img/cds"
 collections:
   - name: "blog"
-    label: "Blog"
+    label: "Blog Post"
     folder: "content/en/blog/posts"
     create: true
     fields:
@@ -21,7 +21,7 @@ collections:
       - {label: "TranslationKey", name: "translationKey", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "blogue"
-    label: "Blogue"
+    label: "Billet de Blogue"
     folder: "content/fr/blog/posts"
     create: true
     fields:
