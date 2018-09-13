@@ -12,7 +12,7 @@
     {{ end }}
   </div>
 
-  <div class="cardContainer">
+  <div class="cardContainer growToFit">
     {{ range $product := $.Site.Data.featured.products.cards }}
       {{ partial "featured-card.html" $product}}
     {{ end }}

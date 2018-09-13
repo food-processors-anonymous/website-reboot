@@ -13,8 +13,10 @@ body {
 .cardItem {
   display: inline-block;
   flex: 0 0 33.3333%;
-  flex-grow: 1;
   min-width: 200px; }
+
+.growToFit {
+  flex-grow: 1; }
 
 .productCard {
   display: inline-block; }
