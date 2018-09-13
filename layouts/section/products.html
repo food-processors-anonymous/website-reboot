@@ -13,7 +13,7 @@
   </div>
 
   <div class="cardContainer growToFit">
-    {{ range $product := $.Site.Data.featured.products.cards }}
+    {{ range $product := index $.Site.Data.featured.products.cards (string ( $.Site.Language)) }}
       {{ partial "featured-card.html" $product}}
     {{ end }}
   </div>

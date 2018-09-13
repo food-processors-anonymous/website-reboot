@@ -60,6 +60,34 @@ collections:
               - {label: text, name: text, widget: text}
               - {label: link, name: link, widget: string}
               - {label: image, name: image, widget: image}
+      - label: "Produits"
+        name: produits
+        file: "data/featured/products.yml"
+        fields:
+          - label: en
+            name: English
+            widget: object
+            fields:
+              - label: cards
+                name: cards
+                widget: list
+                fields:
+                  - {label: title, name: title, widget: string}
+                  - {label: text, name: text, widget: text}
+                  - {label: link, name: link, widget: string}
+                  - {label: image, name: image, widget: image}
+          - label: fr
+            name: French
+            widget: object
+            fields:
+              - label: cards
+                name: cards
+                widget: list
+                fields:
+                  - {label: title, name: title, widget: string}
+                  - {label: text, name: text, widget: text}
+                  - {label: link, name: link, widget: string}
+                  - {label: image, name: image, widget: image}
   - name: "datafiles"
     label: "Data Files"
     files:
