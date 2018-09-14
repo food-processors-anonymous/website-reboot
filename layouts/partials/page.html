@@ -1,0 +1,22 @@
+<header role="banner">
+    {{ partial "fip.html" }}
+    <!-- include site-menu -->
+    <div class="page-banner" style="background-image:url('/img/cds/{{ .Params.image }}')">
+        <div class="page-banner--scrim"></div>
+        <div class="container">
+            <div class="page-banner--title">
+                <h1>{{ .Params.title }}</h1>
+                {{ if .Params.subtitle }}
+                    <span class="page-title-sub">
+                        {{ .Params.subtitle }}
+                    </span>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</header>
+<main role="main" property="mainContentOfPage">
+    <section id="wb-cont">
+        {{ .Content }}
+    </section>
+</main>

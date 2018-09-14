@@ -1,3 +1,0 @@
-{{ $sass := resources.Get "sass/test.scss" }}
-{{ $style := $sass | resources.ToCSS }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
