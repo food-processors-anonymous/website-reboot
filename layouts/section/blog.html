@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        {{ partial "css.html" }}
-    </head>
-  {{ partial "langSwitch" . }}
-  {{ partial "head.html" . }}
-...        
+{{ define "main" }}       
   <h1 id="title">{{i18n "blog"}}</h1>
     <div class="cardContainer">
       {{ range .Pages }}
           {{ .Render "list"}}
       {{ end }}
     </div>
-...
-</html>
+{{ end }}

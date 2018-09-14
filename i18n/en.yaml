@@ -1,3 +1,7 @@
+aria-canada-website:
+  other: "Government of Canada"
+aria-cds-website: 
+  other: "Canadian Digital Service"
 blog:
   other: "Blog"
 canadian-digital-service:
@@ -6,6 +10,8 @@ contact-us:
   other: "Contact us"
 homepage-tag-line:
   other: "People expect government services to be simple and easy to use."
+key-contacts:
+  other: "Key Contacts"
 lang-switch-label:
   other: "Français"
 our-team:

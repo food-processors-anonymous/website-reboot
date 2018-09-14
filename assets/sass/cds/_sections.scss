@@ -206,7 +206,7 @@
 }
 
 .homepage--engagement-report {
-    background: url("/assets/img/cds/engagementReport-bk.jpg") center center no-repeat;
+    background: url("/img/cds/engagementReport-bk.jpg") center center no-repeat;
     background-size: cover;
     background-color: #121519;
     color: $white;
@@ -359,7 +359,7 @@
     }
 
     .hiGraphic {
-        background: url("/assets/img/cds/hi.png") no-repeat center center;
+        background: url("/img/cds/hi.png") no-repeat center center;
         background-size: contain;
         display: block;
         height: 42rem;
@@ -367,7 +367,7 @@
         opacity: 0.25;
 
         .fr & {
-            background: url("/assets/img/cds/salut.png") no-repeat center center;
+            background: url("/img/cds/salut.png") no-repeat center center;
             background-size: contain;
         }
     }

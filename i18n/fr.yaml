@@ -1,3 +1,7 @@
+about-this-site:
+  other: "À propos du site"
+aria-canada-website:
+  other: "Gouvernement du Canada"
 blog:
   other: "Blogue"
 canadian-digital-service: 
@@ -6,6 +10,8 @@ contact-us:
   other: "Contactez-nous"
 homepage-tag-line:
   other: "Les gens s’attendent à ce que les services gouvernementaux soient simples et faciles à utiliser."
+key-contacts:
+  other: "Contacts"
 lang-switch-label:
   other: English
 our-team:

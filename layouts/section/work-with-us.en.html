@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  {{ partial "langSwitch" . }}
-  {{ partial "head.html" . }}
+{{ define "main" }}
 
   <h1 id="title">{{i18n $.Params.title }}</h1>
   <div class="container">
@@ -231,3 +228,5 @@
         </div>
     </section>
 </html>
+
+{{ end }}

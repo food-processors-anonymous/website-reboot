@@ -4139,7 +4139,7 @@ main {
       top: 0; } }
 
 .cds-logo {
-  background-image: url("img/cds/cds-logo-en.svg");
+  background-image: url("../img/cds/cds-logo-en.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -4166,7 +4166,7 @@ main {
   }*/ }
   @media (max-width: 767px) {
     .cds-logo {
-      background-image: url("img/cds/cds-logo-en-abbrev.svg");
+      background-image: url("../img/cds/cds-logo-en-abbrev.svg");
       height: 5rem;
       width: 5rem; } }
   @media (min-width: 768px) {
@@ -4897,7 +4897,7 @@ main {
         bottom: -2rem; } }
 
 .homepage--engagement-report {
-  background: url("/assets/img/cds/engagementReport-bk.jpg") center center no-repeat;
+  background: url("/img/cds/engagementReport-bk.jpg") center center no-repeat;
   background-size: cover;
   background-color: #121519;
   color: #FFFFFF; }
@@ -5004,14 +5004,14 @@ main {
       margin-bottom: 1rem; } }
 
 .section--contact .hiGraphic {
-  background: url("/assets/img/cds/hi.png") no-repeat center center;
+  background: url("/img/cds/hi.png") no-repeat center center;
   background-size: contain;
   display: block;
   height: 42rem;
   width: 100%;
   opacity: 0.25; }
   .fr .section--contact .hiGraphic {
-    background: url("/assets/img/cds/salut.png") no-repeat center center;
+    background: url("/img/cds/salut.png") no-repeat center center;
     background-size: contain; }
 
 .work-in-progress--intro {

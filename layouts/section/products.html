@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<head>
-  {{ partial "css.html" }}
-</head>
-<html lang="en-US">
-  {{ partial "langSwitch" . }}
-  {{ partial "head.html" . }}       
+{{ define "main" }}    
   <h1 id="title">{{i18n "products"}}</h1>
   <div class="cardContainer">
     {{ range .Pages }}
@@ -19,4 +13,5 @@
   </div>
 
   {{ .Content }}
-</html>
+
+  {{end}}

@@ -1,0 +1,58 @@
+<header role="banner">
+        <div>
+            <div>
+                <video playsinline muted loop poster="/img/cds/header-images/front-poster-image.jpg" id="js-video-bg" aria-hidden="true">
+                    <source src="/img/cds/header-images/homepage_header.mp4" type="video/mp4">
+                </video>
+                <div></div>
+    
+                <div aria-hidden="true">
+                    <div id="js-play-pause">
+                        <a href="#" id="js-paused">
+                            <span></span>
+                            <span>{{i18n "play"}}<span> video</span></span>
+                        </a>
+                        <a href="#" id="js-playing" style="display: none;">
+                            <span></span>
+                            <span>{{i18n "pause"}}<span class="sr-only"> video</span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <object type="image/svg+xml" tabindex="-1" data="/img/cds/cds-logo-{{ (string ($.Site.Language)) }}.svg"></object>
+                            <h1>{{ i18n "canadian-digital-service" }}</h1>
+                        </div>
+                        <div>{{ i18n "homepage-tag-line" }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </header>
+    <main role="main" property="mainContentOfPage">
+        <section id="wb-cont">
+        </section>
+    </main>
+
+    <section>
+        <div>
+            <div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <h2>Connect with us!</h2>
+                    TODO include contact info
+                </div>
+            </div>
+        </div>
+    </section>	   
+        
+    <section>
+        TODO include mailing list
+    </section>
