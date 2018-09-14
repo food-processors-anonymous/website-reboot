@@ -1,5 +1,5 @@
-{{ define "main" }}
-<header role="banner">
+{{ define "title" }}
+    <header role="banner">
         <div class="page-banner">
             <div class="page-banner--video">
                 <video playsinline muted loop poster="/img/cds/header-images/front-poster-image.jpg" id="js-video-bg" aria-hidden="true">
@@ -35,6 +35,8 @@
                 </div>
             </div>
         </div>
+{{ end }}
+{{ define "main" }}
     
     </header>
     <main role="main" property="mainContentOfPage">

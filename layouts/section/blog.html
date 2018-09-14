@@ -1,8 +1,9 @@
 {{ define "main" }}       
-  <h1 id="title">{{i18n "blog"}}</h1>
-    <div class="cardContainer">
+  <div class="container page-blog--container-padding">
+    <ul class="blogpost-list">
       {{ range .Pages }}
           {{ .Render "list"}}
       {{ end }}
-    </div>
+    </ul>
+  </div>
 {{ end }}

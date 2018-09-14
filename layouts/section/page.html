@@ -1,3 +1,6 @@
-<h1 id="title">{{i18n $.Params.title }}</h1>
-
-{{ .Content}}
+{{ define "main" }}
+    <main role="main" property="mainContentOfPage">
+        <section id="wb-cont">
+            {{ .Content }}
+        </section>
+{{ end }}

@@ -1,16 +1,4 @@
 {{ define "main" }}    
-  <h1 id="title">{{i18n "products"}}</h1>
-  <div class="cardContainer">
-    {{ range .Pages }}
-        {{ .Render "list"}}
-    {{ end }}
-  </div>
-
-  <div class="cardContainer growToFit">
-    {{ range $product := index $.Site.Data.featured.products.cards (string ( $.Site.Language)) }}
-      {{ partial "featured-card.html" $product}}
-    {{ end }}
-  </div>
 
   {{ .Content }}
 
