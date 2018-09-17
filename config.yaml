@@ -68,7 +68,7 @@ languages:
         url: /travaillez-avec-nous/
         weight: 4
       - identifier: blogue
-        name: blogue
+        name: Blogue
         url: /blogue/
         weight: 5
       - identifier: notre-equipe
