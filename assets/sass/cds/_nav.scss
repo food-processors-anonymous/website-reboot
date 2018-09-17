@@ -80,10 +80,10 @@
 
   // BILINGUAL SPECIFIC CDS LOGO
   .fr & {
-    background-image: url("img/cds/cds-logo-fr.svg") !important;
+    background-image: url("../img/cds/cds-logo-fr.svg") !important;
 
     @include mobile_only {
-      background-image: url("img/cds/cds-logo-fr-abbrev.svg") !important;
+      background-image: url("../img/cds/cds-logo-fr-abbrev.svg") !important;
     }
   }
 

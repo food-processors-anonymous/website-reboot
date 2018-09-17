@@ -4188,10 +4188,10 @@ main {
   .home .cds-logo {
     display: none; }
   .fr .cds-logo {
-    background-image: url("img/cds/cds-logo-fr.svg") !important; }
+    background-image: url("../img/cds/cds-logo-fr.svg") !important; }
     @media (max-width: 767px) {
       .fr .cds-logo {
-        background-image: url("img/cds/cds-logo-fr-abbrev.svg") !important; } }
+        background-image: url("../img/cds/cds-logo-fr-abbrev.svg") !important; } }
 
 .top-nav {
   clear: both;

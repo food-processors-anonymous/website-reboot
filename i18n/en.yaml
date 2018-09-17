@@ -4,10 +4,14 @@ aria-cds-website:
   other: "Canadian Digital Service"
 blog:
   other: "Blog"
+canada-ca: 
+  other: "Visit Canada.ca"
 canadian-digital-service:
   other: "Canadian Digital Service"
 contact-us:
   other: "Contact us"
+goc-symbol:
+  other: "Symbol of the Government of Canada"
 homepage-tag-line:
   other: "People expect government services to be simple and easy to use."
 key-contacts:
@@ -22,8 +26,12 @@ pause:
   other: "Pause"
 play:
   other: "Play"
+privacy:
+  other: "Privacy"
 products:
   other: "Products"
+terms-and-conditions:
+  other: "Terms and Conditions"
 test:
   other: "english test"
 twitter:

@@ -4,12 +4,18 @@ aria-canada-website:
   other: "Gouvernement du Canada"
 blog:
   other: "Blogue"
+canada-ca-link:
+  other: "https://www.canada.ca/fr.html"
+canada-ca:
+  other: "Visiter Canada.ca"
 canadian-digital-service: 
   other: "Service numérique canadien"
 contact-us:
   other: "Contactez-nous"
 homepage-tag-line:
   other: "Les gens s’attendent à ce que les services gouvernementaux soient simples et faciles à utiliser."
+goc-symbol:
+  other: "Symbole du gouvernement du Canada"
 key-contacts:
   other: "Contacts"
 lang-switch-label:
@@ -22,8 +28,16 @@ pause:
   other: "Pause"
 play:
   other: "Lecture"
+privacy-link:
+  other: "/legal/privacy/"
+privacy:
+  other: "Confidentialité"
 products:
   other: "Produits"
+terms-and-conditions:
+  other: "Avis"
+terms-link: 
+  other: "/legal/terms/"
 test:
   other: "francais test"
 twitter:
