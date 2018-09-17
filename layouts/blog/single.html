@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-US">
-{{ partial "langSwitch.html" . }}
-{{ partial "head.html" . }}
-...        
+{{define "main"}}  
   <article>
     <div role="img" aria-label="{{ .Params.imagealt }}" style="height: 20rem; background-size: cover; background-image: url('/img/cds/{{ .Params.image }}')"></div>
     <h1>{{ .Title }}</h1>
@@ -10,5 +6,4 @@
     <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
     {{ .Content }}
   </article>
-...
-</html>
+{{ end }}

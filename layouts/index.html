@@ -53,7 +53,7 @@
         
                     {{ range first 4 .Pages }}
                     <div class="col-xs-12 col-sm-4 col-md-3">
-                        <a class="post" href="{{ .Params.url | .Params.relative_url }}">
+                        <a class="post" href="{{ .Params.url }}">
                             <div class="image" style="background-image:url('/img/cds/{{ .Params.image }}')"></div>
                             <div class="text">
                                 <h3>{{ .Params.title }}</h3>
@@ -85,9 +85,8 @@
     </section>	   
         
     <section class="section section--mailing-list">
-        {{ $ml1 := $.Site.Language | printf "%s.%s" "mailing-list" }}
-        {{ $ml2 := "html" | printf "%s.%s" $ml1 }}
-        {{ partial $ml2 }}
+        {{ $path := printf "%s%s%s" "mailing-list." (string ($.Site.Language)) ".html" }}
+        {{ partial  $path }}
     </section>
 
 {{ end }}

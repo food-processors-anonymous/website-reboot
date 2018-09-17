@@ -13,9 +13,12 @@
         <!--[if gte IE 9 | !IE ]><!-->
         <link href="/assets/lib/gcweb-dist/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
         <link rel="stylesheet" href="/lib/gcweb-dist/GCWeb/css/theme.min.css">
-        {{ $sass := resources.Get "sass/cds.scss" }}
-        {{ $style := $sass | resources.ToCSS }}
-        <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+
+        <!-- workaround to get hugo pipes working with multihost: https://discourse.gohugo.io/t/problem-getting-hugo-pipes-working-with-multiple-languages/13477 -->
+        {{- $target := printf "%s/sass/cds.css" .Lang }}
+        {{- $css := resources.Get "sass/cds.scss" | toCSS (dict "targetPath" $target)}}
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}{{ print $css.RelPermalink | replaceRE "^/[a-z]{2}/(.*)" "$1" }}" media="screen" />
 
         <link href="admin/config.yml" type="text/yaml" rel="cms-config-url">
         <!--<![endif]-->
