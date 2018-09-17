@@ -70,22 +70,24 @@
             </div>
         </section>
 
-    <section>
-        <div>
-            <div>
-                <div>
-                    <div></div>
-                </div>
-                <div>
-                    <h2>Connect with us!</h2>
-                    TODO include contact info
+    <section class="section section--contact page-wide--outer-container-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 hidden-xs">
+                        <div class="hiGraphic"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <h2>Connect with us!</h2>
+                        {{ partial "contact-info.html" . }}
                 </div>
             </div>
         </div>
     </section>	   
         
-    <section>
-        TODO include mailing list
+    <section class="section section--mailing-list">
+        {{ $ml1 := $.Site.Language | printf "%s.%s" "mailing-list" }}
+        {{ $ml2 := "html" | printf "%s.%s" $ml1 }}
+        {{ partial $ml2 }}
     </section>
 
 {{ end }}
