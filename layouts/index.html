@@ -45,6 +45,31 @@
         </section>
     </main>
 
+    <section class="section section--featured-blogposts">
+            <div class="container">
+                <h2 class="section--title">Featured blog posts</h2>
+        
+                <div class="row blog-posts">
+        
+                    {{ range first 4 .Pages }}
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <a class="post" href="{{ .Params.url | .Params.relative_url }}">
+                            <div class="image" style="background-image:url('/img/cds/{{ .Params.image }}')"></div>
+                            <div class="text">
+                                <h3>{{ .Params.title }}</h3>
+                            <div class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+                            </div>
+                        </a>
+                    </div>
+                    {{ end }}
+                </div>
+        
+                <div class="button-center">
+                    <a href="/blog">More blog posts</a>
+                </div>
+            </div>
+        </section>
+
     <section>
         <div>
             <div>

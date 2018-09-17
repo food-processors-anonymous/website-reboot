@@ -107,31 +107,3 @@ title: home
         </div>
     </div>
 </section>
-
-
-<section class="section section--featured-blogposts">
-    <div class="container">
-        <h2 class="section--title">Featured blog posts</h2>
-
-        {% assign posts=site.posts | where:"lang", page.lang %}
-
-        <div class="row blog-posts">
-
-            {% for post in posts limit:4 %}
-            <div class="col-xs-12 col-sm-4 col-md-3">
-                <a class="post" href="{{ post.url | relative_url }}">
-                    <div class="image" style="background-image:url('/img/cds/post-images/{{ .Params.image }}')"></div>
-                    <div class="text">
-                        <h3>{{ post.title }}</h3>
-                    <div class="date">{{ post.date | date: '%B %-d, %Y' }}</div>
-                    </div>
-                </a>
-            </div>
-            {% endfor %}
-        </div>
-
-        <div class="button-center">
-            <a href="/blog">More blog posts</a>
-        </div>
-    </div>
-</section>

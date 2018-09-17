@@ -5,13 +5,13 @@
         </div>
         <div class="col-xs-12 col-sm-8">
             <div class="text">
-                <div class="title"><a href="{{ .Params.url }}"><h2>{{ .Title }}</h2></a></div>
+                <div class="title"><a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a></div>
                 <div class="author">{{ .Params.author }}</div>
             <div class="date">
-                TODO DATE
+                {{ .Date.Format "Mon, Jan 2, 2006" }}
             </div>
                 <div class="summary">{{ .Params.description }}</div>
-                <div class="readmore"><a href="{{ .Params.url }}" aria-label="Lire la suite de {{ .Params.title }}">Lire davantage</a></div>
+                <div class="readmore"><a href="{{ .Permalink }}" aria-label="Lire la suite de {{ .Params.title }}">Lire davantage</a></div>
             </div>
         </div>
     </div>
