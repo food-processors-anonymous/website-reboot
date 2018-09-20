@@ -1,9 +1,46 @@
+{{ define "bodyTag"}}
+  <body vocab="http://schema.org/" typeof="WebPage" class="page-blogpost {{ (string ( $.Site.Language) ) }}">
+{{ end }}
+
+{{define "title"}}
+  {{ with .Params.imagealt }}
+    <div class="page-banner" role="img" aria-label="{{ .Params.imagealt }}" style="background-image: url('/img/cds/{{ .Params.image }}')"></div>
+  {{ else }}
+  <div class="page-banner" style="background-image:url('/img/cds/{{ .Params.image }}')">
+  {{ end }}
+</header>
+{{end}}
+
 {{define "main"}}  
-  <article>
-    <div role="img" aria-label="{{ .Params.imagealt }}" style="height: 20rem; background-size: cover; background-image: url('/img/cds/{{ .Params.image }}')"></div>
-    <h1>{{ .Title }}</h1>
-    <h3>{{ .Params.author }}</h3>
-    <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-    {{ .Content }}
-  </article>
+<main role="main" property="mainContentOfPage">
+    <section id="wb-cont">
+	    <div class="container">
+	    <section class="page--outer-container-padding">
+		    <div class="row">
+			    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+            {{ with index .Params "image-translation" }}
+              <div class="header-translation"><strong>Traduction&nbsp;:&nbsp;</strong>{{ index .Params "image-translation" }}</div>
+            {{ end }}
+
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+              <div class="post-header">
+                <span class="blogpost-pretitle">
+                  <a href="#TODO">TODO</a>
+                </span>
+                <h1>{{ .Params.title }}</h1>
+                <p class="post-meta">
+                  <time datetime="{{ .Params.date }}" itemprop="datePublished">
+                    TODO
+                  </time>          
+                  <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span itemprop="name">{{ .Params.author }}</span>
+                  </span>
+                </p>
+              </div>
+              <div class="post-content" itemprop="articleBody">
+                  {{ .Content }}
+              </div>
+    
+            </article>
+            TODO: pagination
 {{ end }}
