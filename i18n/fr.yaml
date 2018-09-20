@@ -22,12 +22,16 @@ lang-switch-label:
   other: English
 meet-the-full-team:
   other: "Rencontrer l'équipe"
+next-post:
+  other: "Prochaine billet"
 our-team:
   other: "Notre équipe"
 pause:
   other: "Pause"
 play:
   other: "Lecture"
+previous-post: 
+  other: "Billet précédent"
 privacy-link:
   other: "/legal/privacy/"
 privacy:

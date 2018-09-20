@@ -1,7 +1,3 @@
-{{ define "bodyTag"}}
-  <body vocab="http://schema.org/" typeof="WebPage" class="page-blogpost {{ (string ( $.Site.Language) ) }}">
-{{ end }}
-
 {{define "title"}}
   {{ with .Params.imagealt }}
     <div class="page-banner" role="img" aria-label="{{ .Params.imagealt }}" style="background-image: url('/img/cds/{{ .Params.image }}')"></div>
@@ -42,5 +38,31 @@
               </div>
     
             </article>
-            TODO: pagination
+            <div class="previous-next-nav">
+						    <div class="pull-left text-left mrgn-bttm-lg col-md-6 col-sm-12">
+                    {{with .NextInSection }}
+                    <a href="{{ .RelPermalink }}">
+                      <span class="fa fa-arrow-left"></span>
+                      {{i18n "next-post"}}<span class="wb-inv">:</span>
+                      <h5 class="mrgn-lft-md mrgn-tp-0 mrgn-bttm-0">{{ .Params.title }}</h5>
+                    </a>
+                    {{end}}
+                  </div>
+                
+                  <div class="pull-right text-right mrgn-bttm-lg col-md-6 col-sm-12">
+                    {{with .PrevInSection }}
+                    <a href="{{ .RelPermalink }}">{{i18n "previous-post"}}<span class="wb-inv">:</span>
+                      <span class="fa fa-arrow-right"></span>
+                      <h5 class="mrgn-rght-md mrgn-tp-0 mrgn-bttm-0">{{ .Params.title }}</h5>
+
+                    {{ end }}
+                 </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </section>
+      </div>
+      </section>
+  </main>
 {{ end }}

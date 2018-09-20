@@ -20,12 +20,16 @@ lang-switch-label:
   other: "Français"
 meet-the-full-team: 
   other: "Meet the Full Team"
+next-post:
+  other: "Next post"
 our-team:
   other: "Our team"
 pause:
   other: "Pause"
 play:
   other: "Play"
+previous-post:
+  other: "Previous post"
 privacy:
   other: "Privacy"
 products:
