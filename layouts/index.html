@@ -35,10 +35,9 @@
                 </div>
             </div>
         </div>
+        </header>
 {{ end }}
 {{ define "main" }}
-    
-    </header>
     <main role="main" property="mainContentOfPage">
         <section id="wb-cont">
             {{ .Content }}
@@ -50,8 +49,10 @@
                 <h2 class="section--title">Featured blog posts</h2>
         
                 <div class="row blog-posts">
+
+                    {{ $posts := where .Pages "Section" "blog" }}
         
-                    {{ range first 4 .Pages }}
+                    {{ range first 4 $posts }}
                     <div class="col-xs-12 col-sm-4 col-md-3">
                         <a class="post" href="{{ .Params.url }}">
                             <div class="image" style="background-image:url('/img/cds/{{ .Params.image }}')"></div>
