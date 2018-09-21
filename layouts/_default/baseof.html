@@ -41,7 +41,12 @@
         <link rel="alternate" type="application/rss+xml" title="{{ i18n "canadian-digital-service" }}" href="/index.xml" />
         <meta name="google-site-verification" content="sBa9o-9RVlIHHlyeaHgIir20ZKcSuzLVgCCeXIMgKZg" />
     </head>
+    {{ $pageTitle := i18n .Params.title }}
+    {{ with $pageTitle }}
+    <body vocab="http://schema.org/" typeof="WebPage" class="{{ $pageTitle }} {{ (string ( $.Site.Language) ) }}">
+    {{ else }}
     <body vocab="http://schema.org/" typeof="WebPage" class="{{if eq .Section "blog"}}page-blogpost{{else}}{{ .Params.title }}{{end}} {{ (string ( $.Site.Language) ) }}">
+    {{end}}
     <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
     <noscript><iframe title="Google Tag Manager" src="//www.googletagmanager.com/ns.html?id=GTM-TLGQ9K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer1'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer1','GTM-TLGQ9K');</script>
