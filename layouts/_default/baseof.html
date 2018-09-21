@@ -100,7 +100,12 @@
             <div class="page-banner--scrim"></div>
             <div class="container">
                 <div class="page-banner--title">
-                    <h1>{{ i18n .Params.title }}</h1>
+                    {{ $title := i18n .Params.title }}
+                    {{ with $title }}
+                        <h1>{{ $title }}</h1>
+                    {{ else }}
+                        <h1>{{ .Params.title }}</h1>
+                    {{end}}
                     {{ if .Params.subtitle }}
                         <span class="page-title-sub">
                             {{ .Params.subtitle }}
