@@ -8,61 +8,57 @@
 {{end}}
 
 {{define "main"}}  
-<main role="main" property="mainContentOfPage">
-    <section id="wb-cont">
-	    <div class="container">
-	    <section class="page--outer-container-padding">
-		    <div class="row">
-			    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-            {{ with index .Params "image-translation" }}
-              <div class="header-translation"><strong>Traduction&nbsp;:&nbsp;</strong>{{ index .Params "image-translation" }}</div>
-            {{ end }}
+  <div class="container">
+  <section class="page--outer-container-padding">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+        {{ with index .Params "image-translation" }}
+          <div class="header-translation"><strong>Traduction&nbsp;:&nbsp;</strong>{{ index .Params "image-translation" }}</div>
+        {{ end }}
 
-            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-              <div class="post-header">
-                <span class="blogpost-pretitle">
-                  <a href="#TODO">TODO</a>
-                </span>
-                <h1>{{ .Params.title }}</h1>
-                <p class="post-meta">
-                  <time datetime="{{ .Params.date }}" itemprop="datePublished">
-                    TODO
-                  </time>          
-                  <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                    <span itemprop="name">{{ .Params.author }}</span>
-                  </span>
-                </p>
-              </div>
-              <div class="post-content" itemprop="articleBody">
-                  {{ .Content }}
-              </div>
-    
-            </article>
-            <div class="previous-next-nav">
-						    <div class="pull-left text-left mrgn-bttm-lg col-md-6 col-sm-12">
-                    {{with .NextInSection }}
-                    <a href="{{ .RelPermalink }}">
-                      <span class="fa fa-arrow-left"></span>
-                      {{i18n "next-post"}}<span class="wb-inv">:</span>
-                      <h5 class="mrgn-lft-md mrgn-tp-0 mrgn-bttm-0">{{ .Params.title }}</h5>
-                    </a>
-                    {{end}}
-                  </div>
-                
-                  <div class="pull-right text-right mrgn-bttm-lg col-md-6 col-sm-12">
-                    {{with .PrevInSection }}
-                    <a href="{{ .RelPermalink }}">{{i18n "previous-post"}}<span class="wb-inv">:</span>
-                      <span class="fa fa-arrow-right"></span>
-                      <h5 class="mrgn-rght-md mrgn-tp-0 mrgn-bttm-0">{{ .Params.title }}</h5>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+          <div class="post-header">
+            <span class="blogpost-pretitle">
+              <a href="#TODO">TODO</a>
+            </span>
+            <h1>{{ .Params.title }}</h1>
+            <p class="post-meta">
+              <time datetime="{{ .Params.date }}" itemprop="datePublished">
+                TODO
+              </time>          
+              <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">{{ .Params.author }}</span>
+              </span>
+            </p>
+          </div>
+          <div class="post-content" itemprop="articleBody">
+              {{ .Content }}
+          </div>
 
-                    {{ end }}
-                 </a>
-                    </div>
-                  </div>
+        </article>
+        <div class="previous-next-nav">
+            <div class="pull-left text-left mrgn-bttm-lg col-md-6 col-sm-12">
+                {{with .NextInSection }}
+                <a href="{{ .RelPermalink }}">
+                  <span class="fa fa-arrow-left"></span>
+                  {{i18n "next-post"}}<span class="wb-inv">:</span>
+                  <h5 class="mrgn-lft-md mrgn-tp-0 mrgn-bttm-0">{{ .Params.title }}</h5>
+                </a>
+                {{end}}
+              </div>
+            
+              <div class="pull-right text-right mrgn-bttm-lg col-md-6 col-sm-12">
+                {{with .PrevInSection }}
+                <a href="{{ .RelPermalink }}">{{i18n "previous-post"}}<span class="wb-inv">:</span>
+                  <span class="fa fa-arrow-right"></span>
+                  <h5 class="mrgn-rght-md mrgn-tp-0 mrgn-bttm-0">{{ .Params.title }}</h5>
+
+                {{ end }}
+              </a>
                 </div>
               </div>
-              </section>
-      </div>
-      </section>
-  </main>
+            </div>
+          </div>
+          </section>
+  </div>
 {{ end }}

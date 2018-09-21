@@ -1,11 +1,12 @@
 <!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="{{ (string ( $.Site.Language) ) }}" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
     <html class="no-js" lang="{{ (string ( $.Site.Language) ) }}" dir="ltr">
     <!--<![endif]-->
+    {{ $pageTitle := i18n .Params.title }}
     <head>
         <meta charset="utf-8">
         <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
                 wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-        <title>{{ .Params.title }} - {{ i18n "canadian-digital-service" }}</title>
+        <title>{{with $pageTitle}}{{$pageTitle}}{{else}}{{ .Params.title }}{{end}} - {{ i18n "canadian-digital-service" }}</title>
         <meta content="width=device-width,initial-scale=1" name="viewport">
         <!-- Meta data -->
         <meta name="description" content="{{ .Params.description }}">
@@ -41,7 +42,6 @@
         <link rel="alternate" type="application/rss+xml" title="{{ i18n "canadian-digital-service" }}" href="/index.xml" />
         <meta name="google-site-verification" content="sBa9o-9RVlIHHlyeaHgIir20ZKcSuzLVgCCeXIMgKZg" />
     </head>
-    {{ $pageTitle := i18n .Params.title }}
     {{ with $pageTitle }}
     <body vocab="http://schema.org/" typeof="WebPage" class="{{ $pageTitle }} {{ (string ( $.Site.Language) ) }}">
     {{ else }}
@@ -118,16 +118,20 @@
         </div>
     </header>
     {{ end }}
-
-    {{ block "main" . }}
-
     <main role="main" property="mainContentOfPage">
         <section id="wb-cont">
-            {{ .Content }}
+        {{ block "main" . }}
+            <div class="container">
+                <section class="content">
+                    {{ .Content }}
+                </section>
+            </div>
+        {{ end }}
         </section>
+    </main>
+    {{ block "index" . }}
+    {{end}}
 
-    {{ end }}
-    
     {{ block "footer" . }}
     
     <footer role="contentinfo" id="wb-info">
