@@ -6,6 +6,8 @@ blog:
   other: "Blog"
 canada-ca: 
   other: "Visit Canada.ca"
+canada-ca-link:
+  other: "https://www.canada.ca/en.html"
 canadian-digital-service:
   other: "Canadian Digital Service"
 contact-us:
@@ -32,10 +34,14 @@ previous-post:
   other: "Previous post"
 privacy:
   other: "Privacy"
+privacy-link: 
+  other: "/legal/privacy/"
 products:
   other: "Products"
 terms-and-conditions:
   other: "Terms and Conditions"
+terms-link:
+  other: "/legal/terms/"
 test:
   other: "english test"
 twitter:

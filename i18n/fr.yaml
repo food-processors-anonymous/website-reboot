@@ -33,7 +33,7 @@ play:
 previous-post: 
   other: "Billet précédent"
 privacy-link:
-  other: "/legal/privacy/"
+  other: "/transparence/confidentialite/"
 privacy:
   other: "Confidentialité"
 products:
@@ -41,7 +41,7 @@ products:
 terms-and-conditions:
   other: "Avis"
 terms-link: 
-  other: "/legal/terms/"
+  other: "/transparence/avis/"
 test:
   other: "francais test"
 twitter:
