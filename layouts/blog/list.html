@@ -1,14 +1,14 @@
 <li class="post">
     <div class="row">
         <div class="col-xs-12 col-sm-4">
-            <div class="photo" role="img" aria-label='TODO' style="background-image: url('/img/cds/{{ .Params.image }}')"></div>
+            <div class="photo" role="img" aria-label='{{ index .Params "image-alt" }}' style="background-image: url('/img/cds/{{ .Params.image }}')"></div>
         </div>
         <div class="col-xs-12 col-sm-8">
             <div class="text">
-                <div class="title"><a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a></div>
+                <div class="title"><a href="{{ .RelPermalink }}"><h2>{{ .Title }}</h2></a></div>
                 <div class="author">{{ .Params.author }}</div>
             <div class="date">
-                {{ .Date.Format "Mon, Jan 2, 2006" }}
+                {{ .Date.Format "Jan 2, 2006" }}
             </div>
                 <div class="summary">{{ .Params.description }}</div>
                 <div class="readmore"><a href="{{ .Permalink }}" aria-label="Lire la suite de {{ .Params.title }}">Lire davantage</a></div>

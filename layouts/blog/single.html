@@ -19,12 +19,12 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
           <div class="post-header">
             <span class="blogpost-pretitle">
-              <a href="#TODO">TODO</a>
+              <a href="/blog/">{{i18n "blog"}}</a>
             </span>
             <h1>{{ .Params.title }}</h1>
             <p class="post-meta">
               <time datetime="{{ .Params.date }}" itemprop="datePublished">
-                TODO
+                {{ .Date.Format "Jan 2, 2006" }}
               </time>          
               <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <span itemprop="name">{{ .Params.author }}</span>
