@@ -38,7 +38,7 @@
         <script>dataLayer1 = [];</script>
         <!-- End Google Tag Manager -->
     
-        <link rel="alternate" type="application/rss+xml" title="{{ i18n "canadian-digital-service" }}" href="/feed.xml" />
+        <link rel="alternate" type="application/rss+xml" title="{{ i18n "canadian-digital-service" }}" href="/index.xml" />
         <meta name="google-site-verification" content="sBa9o-9RVlIHHlyeaHgIir20ZKcSuzLVgCCeXIMgKZg" />
     </head>
     <body vocab="http://schema.org/" typeof="WebPage" class="{{if eq .Section "blog"}}page-blogpost{{else}}{{ .Params.title }}{{end}} {{ (string ( $.Site.Language) ) }}">
@@ -74,7 +74,6 @@
                         <div class="mobile-lang"></div>
                             <ul class="top-nav">
                                 {{ range $menu := .Site.Menus.main }}
-        
                                     <li class="top-nav--link">
                                         <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
                                     </li>
