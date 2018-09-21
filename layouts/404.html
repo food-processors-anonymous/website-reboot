@@ -1,13 +1,23 @@
----
-title: 'Page not found'
-
----
-<div>
-    <h2>Error 404</h2>
-    <p>Sorry! We can’t find the page you were looking for.</p>
-    <ul>
-        <li>Return to the <a href="/">home page</a>;</li>
-        <li><a href="/contact">Contact us</a> and we'll help you out.</li>
-    </ul>
-
-</div>
+{{ define "title"}}
+    <div class="page-banner" style="background-image:url('/img/cds/header-images/our-team.jpg')">
+        <div class="page-banner--scrim"></div>
+        <div class="container">
+            <div class="page-banner--title">
+                <h1>{{ i18n "404"}}</h1>
+            </div>
+        </div>
+    </div>
+    </header>
+{{ end }}
+{{ define "main"}}
+    <main role="main" property="mainContentOfPage">
+        <section id="wb-cont">
+            <div class="container">
+                <div class="content">
+                    {{ $path := printf "%s%s%s" "404." (string ($.Site.Language)) ".html" }}
+                    {{ partial  $path }}
+                </div>
+            </div>
+        </section>
+    </main>
+{{ end }}
