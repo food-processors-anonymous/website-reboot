@@ -34,60 +34,6 @@ collections:
       - {label: "Image Alt-text", name: "image-alt"}
       - {label: "TranslationKey", name: "translationKey", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "products"
-    label: "Products"
-    folder: "content/en/products/products"
-    create: true
-    fields:
-      - {label: "Product Name", name: "title", widget: "string"}
-      - label: "Phase"
-        name: phase
-        widget: "select"
-        options: ["discovery", "alpha", "beta", "live"]
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "featuredcards"
-    label: "Featured Cards"
-    files:
-      - label: "Products Page"
-        name: products
-        file: "data/featured/products.yml"
-        fields:
-          - label: cards
-            name: cards
-            widget: list
-            fields:
-              - {label: title, name: title, widget: string}
-              - {label: text, name: text, widget: text}
-              - {label: link, name: link, widget: string}
-              - {label: image, name: image, widget: image}
-      - label: "Produits"
-        name: produits
-        file: "data/featured/products.yml"
-        fields:
-          - label: en
-            name: English
-            widget: object
-            fields:
-              - label: cards
-                name: cards
-                widget: list
-                fields:
-                  - {label: title, name: title, widget: string}
-                  - {label: text, name: text, widget: text}
-                  - {label: link, name: link, widget: string}
-                  - {label: image, name: image, widget: image}
-          - label: fr
-            name: French
-            widget: object
-            fields:
-              - label: cards
-                name: cards
-                widget: list
-                fields:
-                  - {label: title, name: title, widget: string}
-                  - {label: text, name: text, widget: text}
-                  - {label: link, name: link, widget: string}
-                  - {label: image, name: image, widget: image}
   - name: "datafiles"
     label: "Data Files"
     files:
@@ -97,7 +43,7 @@ collections:
         fields:
           - label: languages
             name: languages
-            widget: object
+            widget: list
             fields:
               - label: en
                 name: en
@@ -137,28 +83,14 @@ collections:
         fields:
           - label: test
             name: test
-            widget: object
-            fields:
-              - {label: other, name: other, widget: string}
-          - label: blog
-            name: blog
-            widget: object
-            fields:
-              - {label: other, name: other, widget: string}
+            widget: list
       - label: "i18n Francais"
         name: "i18nFr"
         file: "i18n/fr.yaml"
         fields:
           - label: test
             name: test
-            widget: object
-            fields:
-              - {label: other, name: other, widget: string}
-          - label: blog
-            name: blog
-            widget: object
-            fields:
-              - {label: other, name: other, widget: string}
+            widget: list
       - label: "Team"
         name: "team"
         file: "data/team.yml"
