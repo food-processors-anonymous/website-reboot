@@ -1,7 +1,7 @@
 backend:
   name: github
-  branch: newDataStructure # Branch to update (optional; defaults to master)
-  repo: food-processors-anonymous/website-reboot
+  branch: master # Branch to update (optional; defaults to master)
+  repo: cds-snc/website-reboot
 publish_mode: editorial_workflow
 media_folder: "static/img/cds"
 public_folder: "/img/cds"
