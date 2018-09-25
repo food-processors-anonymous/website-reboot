@@ -21,7 +21,7 @@
         {{- $css := resources.Get "sass/cds.scss" | toCSS (dict "targetPath" $target)}}
         <link rel="stylesheet" href="{{ .Site.BaseURL }}{{ print $css.RelPermalink | replaceRE "^/[a-z]{2}/(.*)" "$1" }}" media="screen" />
 
-        <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url">
+        <!--<link href="/admin/config.yml" type="text/yaml" rel="cms-config-url">-->
         <!--<![endif]-->
         <!--[if lt IE 9]>
         <link href="/lib/gcweb-dist/GCWeb/assets/favicon.ico" rel="shortcut icon" />

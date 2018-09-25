@@ -44,8 +44,12 @@ terms-and-conditions:
   other: "Avis"
 terms-link: 
   other: "/transparence/avis/"
-test:
-  other: "francais test"
+trans-abbr-switch:
+  other: "en"
+trans-abbr:
+  other: "fr"
+trans-base-url:
+  other: "http://digital.canada.ca"
 twitter:
   other: SNC_GC
 work-with-us:

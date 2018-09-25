@@ -8,7 +8,7 @@ image-alt: Jason and Dave standing in front of the building of Natural Resources
 translationKey: "colocating-with-NRCan"
 ---
 
-We are building a public-facing application programming interface (API) for Natural Resources Canada to open up access to EnerGuide Home Energy Ratings data. We talk about the details of this partnership in our post [Conducting user research with NRCan to inform an API build - Part 1](/2018/02/15/a-conducting-user-research-with-NRCan/).
+We are building a public-facing application programming interface (API) for Natural Resources Canada to open up access to EnerGuide Home Energy Ratings data. We talk about the details of this partnership in our post [Conducting user research with NRCan to inform an API build - Part 1](/2018/02/15/a-conducting-user-research-with-nrcan/).
 
 As we recently switched to the “build phase”, we had a lot of questions about the source data. Even though we had been provided with a wide range of documentation, sample data, schema files, etc. by email, there was a lot of uncertainty on our side over how the existing systems worked together, and what some of the sample data meant.
 

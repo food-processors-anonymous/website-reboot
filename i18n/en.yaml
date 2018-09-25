@@ -44,8 +44,12 @@ terms-and-conditions:
   other: "Terms and Conditions"
 terms-link:
   other: "/legal/terms/"
-test:
-  other: "english test"
+trans-abbr-switch:
+  other: "fr"
+trans-abbr:
+  other: "en"
+trans-base-url:
+  other: "http://numerique.canada.ca"
 twitter:
   other: CDS_GC
 work-with-us:
