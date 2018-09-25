@@ -6,7 +6,7 @@ author: Dave Samojlenko
 date: 2018-09-25T17:32:22.637Z
 image: /img/cds/blog-accessibility-2018.jpg
 image-alt: Just a banner image
-translationKey: Just a banner image in french
+translationKey: dave-test-blog-post
 ---
 asdf
 
