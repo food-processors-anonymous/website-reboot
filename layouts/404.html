@@ -7,17 +7,13 @@
             </div>
         </div>
     </div>
-    </header>
 {{ end }}
+
 {{ define "main"}}
-    <main role="main" property="mainContentOfPage">
-        <section id="wb-cont">
-            <div class="container">
-                <div class="content">
-                    {{ $path := printf "%s%s%s" "404." (string ($.Site.Language)) ".html" }}
-                    {{ partial  $path }}
-                </div>
-            </div>
-        </section>
-    </main>
+    <div class="container">
+        <div class="content">
+            {{ $path := printf "%s%s%s" "404." (string ($.Site.Language)) ".html" }}
+            {{ partial  $path }}
+        </div>
+    </div>
 {{ end }}

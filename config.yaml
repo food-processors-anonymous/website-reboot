@@ -7,6 +7,10 @@ languages:
     lang: en
     languageName: English
     title: Blog
+    frontmatter:
+      date: [":filename", ":default"]
+    permalinks:
+      blog: /:year/:month/:day/:filename
     weight: 1
     menu:
       main:
@@ -44,11 +48,10 @@ languages:
     contentDir: content/fr
     lang: fr
     languageName: Francais
-    params:
-      navigation:
-        help: Aide
     title: Blogue
     weight: 2
+    permalinks:
+      blogue: /:year/:month/:day/:filename
     menu:
       main:
       - identifier: home
@@ -79,6 +82,3 @@ languages:
         name: Contactez-nous
         url: /contactez-nous/
         weight: 7
-params:
-  navigation:
-    help: "Help"
