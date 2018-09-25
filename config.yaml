@@ -50,8 +50,10 @@ languages:
     languageName: Francais
     title: Blogue
     weight: 2
+    frontmatter:
+      date: [":filename", ":default"]
     permalinks:
-      blogue: /:year/:month/:day/:filename
+      blog: /:year/:month/:day/:filename
     menu:
       main:
       - identifier: home
