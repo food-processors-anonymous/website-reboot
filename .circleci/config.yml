@@ -90,16 +90,15 @@ jobs:
       - deploy:
           name: "Deploy English"
           command: |
-            ls -lah /tmp/cds-website-dist
-            # aws s3 sync /home/circleci/cds-website/en s3://cds-website-english/ --delete
-            # aws cloudfront create-invalidation --cli-input-json "{\"DistributionId\":\"E3EIUBOL3WTOOO\",\"InvalidationBatch\":{\"Paths\":{\"Quantity\":1,\"Items\":[\"/*\"]},\"CallerReference\":\"$(date +%s)\"}}"
+            aws s3 sync /tmp/cds-website-dist/en s3://cds-website-english/ --delete
+            aws cloudfront create-invalidation --cli-input-json "{\"DistributionId\":\"E2FB6XWK4I6AMW\",\"InvalidationBatch\":{\"Paths\":{\"Quantity\":1,\"Items\":[\"/*\"]},\"CallerReference\":\"$(date +%s)\"}}"
 
       # Deploy french from cache and create Cloudfront object invalidation
-      # - deploy:
-          # name: "Deploy French"
-          # command: |
-            # aws s3 sync /home/circleci/snc-website s3://cds-website-french/ --delete
-            # aws cloudfront create-invalidation --cli-input-json "{\"DistributionId\":\"E3FI5UW2E5PBD3\",\"InvalidationBatch\":{\"Paths\":{\"Quantity\":1,\"Items\":[\"/*\"]},\"CallerReference\":\"$(date +%s)\"}}"
+      - deploy:
+          name: "Deploy French"
+          command: |
+            aws s3 sync /tmp/cds-website-dist/fr s3://cds-website-french/ --delete
+            aws cloudfront create-invalidation --cli-input-json "{\"DistributionId\":\"EJRMC8ABDE4U\",\"InvalidationBatch\":{\"Paths\":{\"Quantity\":1,\"Items\":[\"/*\"]},\"CallerReference\":\"$(date +%s)\"}}"
 
 workflows:
   version: 2
@@ -117,6 +116,6 @@ workflows:
           requires:
             - build
             - test
-      #    filters:
-      #      branches:
-      #        only: ci_cd_config
+          filters:
+            branches:
+              only: master
