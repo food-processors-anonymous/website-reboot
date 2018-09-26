@@ -7,6 +7,7 @@ languages:
     lang: en
     languageName: English
     title: Blog
+    Paginate: 5
     frontmatter:
       date: [":filename", ":default"]
     permalinks:
@@ -49,6 +50,7 @@ languages:
     lang: fr
     languageName: Francais
     title: Blogue
+    Paginate: 5
     weight: 2
     frontmatter:
       date: [":filename", ":default"]
