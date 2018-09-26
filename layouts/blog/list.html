@@ -10,7 +10,7 @@
             <div class="date">
                 {{ .Date.Format "Jan 2, 2006" }}
             </div>
-                <div class="summary">{{ .Params.description }}</div>
+                <div class="summary">{{ .Params.description | truncate 300 }}</div>
                 <div class="readmore"><a href="{{ .Permalink }}" aria-label="Lire la suite de {{ .Params.title }}">Lire davantage</a></div>
             </div>
         </div>
