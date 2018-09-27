@@ -12,10 +12,16 @@ canada-ca:
   other: "Visiter Canada.ca"
 canadian-digital-service: 
   other: "Service numérique canadien"
+close:
+  other: 'Fermer'
 contact-us:
   other: "Contactez-nous"
 homepage-tag-line:
   other: "Les gens s’attendent à ce que les services gouvernementaux soient simples et faciles à utiliser."
+ga:
+  other: 'UA-102484926-2'
+goc:
+  other: "Gouvernement du Canada"
 goc-symbol:
   other: "Symbole du gouvernement du Canada"
 key-contacts:
@@ -44,6 +50,8 @@ terms-and-conditions:
   other: "Avis"
 terms-link: 
   other: "/transparence/avis/"
+top-of-page:
+  other: "Haut de la page"
 trans-abbr-switch:
   other: "en"
 trans-abbr:

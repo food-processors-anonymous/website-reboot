@@ -12,8 +12,14 @@ canada-ca-link:
   other: "https://www.canada.ca/en.html"
 canadian-digital-service:
   other: "Canadian Digital Service"
+close:
+  other: "Close"
 contact-us:
   other: "Contact us"
+ga:
+  other: 'UA-102484926-1'
+goc:
+  other: "Government of Canada"
 goc-symbol:
   other: "Symbol of the Government of Canada"
 homepage-tag-line:
@@ -44,6 +50,8 @@ terms-and-conditions:
   other: "Terms and Conditions"
 terms-link:
   other: "/legal/terms/"
+top-of-page:
+  other: "Top of Page"
 trans-abbr-switch:
   other: "fr"
 trans-abbr:
