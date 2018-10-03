@@ -16,6 +16,8 @@ close:
   other: 'Fermer'
 contact-us:
   other: "Contactez-nous"
+hiring:
+  other: "Nous embauchons"
 homepage-tag-line:
   other: "Les gens s’attendent à ce que les services gouvernementaux soient simples et faciles à utiliser."
 ga:

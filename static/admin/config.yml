@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: master # Branch to update (optional; defaults to master)
-  repo: cds-snc/website-reboot
+  repo: food-processors-anonymous/website-reboot
 publish_mode: editorial_workflow
 media_folder: "static/img/cds"
 public_folder: "/img/cds"
@@ -18,7 +18,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Banner Image", name: "image", widget: "image"}
       - {label: "Image Alt-text", name: "image-alt"}
-      - {label: "TranslationKey", name: "translationKey", widget: "string"}
+      - {label: "Blog ID (Use the same ID for both languages)", name: "translationKey", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "blogue"
     label: "Billet de Blogue"
@@ -32,8 +32,30 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Banner Image", name: "image", widget: "image"}
       - {label: "Image Alt-text", name: "image-alt"}
-      - {label: "TranslationKey", name: "translationKey", widget: "string"}
+      - {label: "Blog ID (Use the same ID for both languages)", name: "translationKey", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "work-with-us"
+    label: "Job Postings"
+    folder: "content/en/work-with-us/positions"
+    create: true
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "job-posting" }
+      - { label: "Type", name: "type", widget: "hidden", default: "section" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string"}
+      - { label: "Archived", name: "archived", widget: "boolean", default: false}
+      - { label: "Body", name: "body", widget: "markdown"}
+  - name: "travaillez-avec-nous"
+    label: "Carrières"
+    folder: "content/fr/work-with-us/positions"
+    create: true
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "job-posting" }
+      - { label: "Type", name: "type", widget: "hidden", default: "section" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string"}
+      - { label: "Archived", name: "archived", widget: "boolean", default: false}
+      - { label: "Body", name: "body", widget: "markdown"}
   - name: "datafiles"
     label: "Data Files"
     files:
@@ -77,20 +99,6 @@ collections:
                           - {label: name, name: name, widget: string}
                           - {label: url, name: url, widget: string}
                           - {label: weight, name: weight, widget: number}
-      - label: "i18n English"
-        name: "i18nEn"
-        file: "i18n/en.yaml"
-        fields:
-          - label: test
-            name: test
-            widget: list
-      - label: "i18n Francais"
-        name: "i18nFr"
-        file: "i18n/fr.yaml"
-        fields:
-          - label: test
-            name: test
-            widget: list
       - label: "Team"
         name: "team"
         file: "data/team.yml"
