@@ -12,6 +12,7 @@ languages:
       date: [":filename", ":default"]
     permalinks:
       blog: /:year/:month/:day/:filename
+      work-with-us: /:title
     weight: 1
     menu:
       main:
@@ -56,6 +57,7 @@ languages:
       date: [":filename", ":default"]
     permalinks:
       blog: /:year/:month/:day/:filename
+      work-with-us: /:title
     menu:
       main:
       - identifier: home
@@ -71,7 +73,7 @@ languages:
         url: /produits/
         weight: 3
       - identifier: travaillez-avec-nous
-        name: Travaillez avec nous
+        name: Carrières
         url: /travaillez-avec-nous/
         weight: 4
       - identifier: blogue
