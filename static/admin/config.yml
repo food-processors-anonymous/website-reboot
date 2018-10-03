@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: existingContent # Branch to update (optional; defaults to master)
+  branch: master # Branch to update (optional; defaults to master)
   repo: food-processors-anonymous/website-reboot
 publish_mode: editorial_workflow
 media_folder: "static/img/cds"
